@@ -161,9 +161,9 @@ public class HoneywellBarcodePlugin extends CordovaPlugin implements HEDCUsbCom.
 					}       
 					
 					// send to plugin
-					PluginResult result = new PluginResult(PluginResult.Status.OK, connectionStatus);
-					result.setKeepCallback(true);
-					mGlobalCallbackContext.sendPluginResult(result);
+					//PluginResult result = new PluginResult(PluginResult.Status.OK, connectionStatus);
+					//result.setKeepCallback(true);
+					//mGlobalCallbackContext.sendPluginResult(result);
 				}					
 		   });		   
     }
