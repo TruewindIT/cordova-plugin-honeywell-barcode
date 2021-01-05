@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.truewind.honeywellbarcodeplugin" version="1.0.0">
+   <name>HoneywellBarcodePlugin</name>
+   <js-module name="HoneywellBarcodePlugin" src="www/HoneywellBarcodePlugin.js">
+      <clobbers target="cordova.plugins.HoneywellBarcodePlugin" />
+   </js-module>
+   <platform name="android">
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+	  </config-file>
+	  <config-file parent="/*" target="res/xml/config.xml">
+	     <feature name="HoneywellBarcodePlugin">
+            <param name="android-package" value="com.truewind.honeywellbarcodeplugin.HoneywellBarcodePlugin" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/HoneywellBarcodePlugin.java" target-dir="src/com/truewind/honeywellbarcodeplugin/HoneywellBarcodePlugin" />
+	  <framework src="src/android/hedc_usb_com.gradle" custom="true" type="gradleReference"/>    
+      <lib-file src="src/android/hedc_usb_com.aar"/>	  
+   </platform>
+</plugin>

@@ -1,0 +1,17 @@
+{
+  "name": "com.truewind.honeywellbarcodeplugin",
+  "version": "1.0.0",
+  "description": "Honeywell Barcode Scanner Plugin",
+  "cordova": {
+    "id": "com.truewind.honeywellbarcodeplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "João César (Truewind)",
+  "license": "ISC"
+}
