@@ -18,6 +18,6 @@
       <source-file src="src/android/HoneywellBarcodePlugin.java" target-dir="src/com/truewind/honeywellbarcodeplugin/HoneywellBarcodePlugin" />
 	  <framework src="src/android/hedc_usb_com.gradle" custom="true" type="gradleReference"/>    
       <lib-file src="src/android/hedc_usb_com.aar"/>	
-	
+	<!-- comentário -->
    </platform>
 </plugin>
